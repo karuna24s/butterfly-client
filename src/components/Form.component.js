@@ -11,7 +11,6 @@ const socket = socketIOClient(url);
 const handleSubmit = event => {
   event.preventDefault();
 
-  //On click, emit data to server
   socket.emit("butterfly", {
     pathName: event.target.value
   });
