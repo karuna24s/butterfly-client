@@ -6,7 +6,7 @@ import ButterflyField from "./components/ButterflyField.component";
 const App = () => {
   const [pathName, setPathName] = useState("");
 
-  const socket = socketIOClient("http://127.0.0.1:4001");
+  const socket = socketIOClient("https://butterfly-server-api.herokuapp.com/");
   socket.on("butterfly", data => {
     //data given to us from the server from the server
     console.log("Client Listening For Server: ", data);

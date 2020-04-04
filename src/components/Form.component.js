@@ -5,7 +5,7 @@ import { Button } from "reactstrap";
 
 import { supportTexts } from "../data/supportTexts";
 
-const url = "http://127.0.0.1:4001";
+const url = "https://butterfly-server-api.herokuapp.com/";
 const socket = socketIOClient(url);
 
 const handleSubmit = event => {
