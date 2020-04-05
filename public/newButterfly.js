@@ -3,10 +3,10 @@ const url = "https://butterfly-server-api.herokuapp.com/";
 const socket = socketIOClient(url);
 
 export function createBlueButterflies() {
-  const emittedObject = {};
-  socket.emit("butterfly", {
-    pathName: emittedObject,
-  });
+  // const emittedObject = {};
+  // socket.emit("butterfly", {
+  //   pathName: emittedObject,
+  // });
   const BlueButton = document.getElementById("Blue");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/BlueButterfly.png");
@@ -16,10 +16,10 @@ export function createBlueButterflies() {
 }
 
 export function createPinkButterflies() {
-  const emittedObject = {};
-  socket.emit("butterfly", {
-    pathName: emittedObject,
-  });
+  // const emittedObject = {};
+  // socket.emit("butterfly", {
+  //   pathName: emittedObject,
+  // });
   const PinkButton = document.getElementById("Pink");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/PinkButterfly.png");
@@ -29,10 +29,10 @@ export function createPinkButterflies() {
 }
 
 export function createOrangeButterflies() {
-  const emittedObject = {};
-  socket.emit("butterfly", {
-    pathName: emittedObject,
-  });
+  // const emittedObject = {};
+  // socket.emit("butterfly", {
+  //   pathName: emittedObject,
+  // });
   const OrangeButton = document.getElementById("Orange");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/OrangeButterfly.png");
@@ -42,10 +42,10 @@ export function createOrangeButterflies() {
 }
 
 export function createPurpleButterflies() {
-  const emittedObject = {};
-  socket.emit("butterfly", {
-    pathName: emittedObject,
-  });
+  // const emittedObject = {};
+  // socket.emit("butterfly", {
+  //   pathName: emittedObject,
+  // });
   const PurpleButton = document.getElementById("Purple");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/PurpleButterfly.png");
@@ -55,10 +55,10 @@ export function createPurpleButterflies() {
 }
 
 export function createYellowButterflies() {
-  const emittedObject = {};
-  socket.emit("butterfly", {
-    pathName: emittedObject,
-  });
+  // const emittedObject = {};
+  // socket.emit("butterfly", {
+  //   pathName: emittedObject,
+  // });
   const YellowButton = document.getElementById("Yellow");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/YellowButterfly.png");

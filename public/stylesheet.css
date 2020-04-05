@@ -97,7 +97,7 @@ figure {
   }
 }
 
-#Yellow {
+#YellowButterflies {
   animation: Yellow 5s linear;
   position: absolute;
   bottom: 0;
@@ -115,7 +115,7 @@ figure {
   }
 }
 
-#Orange {
+#OrangeButterflies {
   animation: Orange 5s linear;
   position: absolute;
   bottom: 0;
@@ -150,7 +150,7 @@ figure {
   }
 }
 
-#Purple {
+#PurpleButterflies {
   animation: Purple 5s linear;
   position: absolute;
   bottom: 0;
