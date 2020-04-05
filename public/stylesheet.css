@@ -90,6 +90,7 @@ figure {
 @keyframes Blue {
   0% {
     top: 0px;
+    left: -10px;
   }
 
   100% {
@@ -106,12 +107,11 @@ figure {
 
 @keyframes Yellow {
   0% {
-    bottom: 0;
-    left: 0%;
+    top: 0px;
+    left: -95px;
   }
   100% {
-    bottom: 100%;
-    left: 10%;
+    top: -1500px;
   }
 }
 
@@ -124,10 +124,11 @@ figure {
 
 @keyframes Orange {
   0% {
-    bottom: 0%;
+    top: 0px;
+    left: -30px;
   }
   100% {
-    bottom: 100%;
+    top: -1500px;
   }
 }
 
@@ -141,12 +142,11 @@ figure {
 @keyframes Pink {
   0% {
     top: 0px;
-    left: 20px;
+    left: 650px;
   }
 
   100% {
     top: -1500px;
-    left: 20px;
   }
 }
 
@@ -159,12 +159,11 @@ figure {
 
 @keyframes Purple {
   0% {
-    bottom: 0%;
-    right: 10%;
+    top: 0px;
+    left: 850px;
   }
 
   100% {
-    bottom: 100%;
-    right: 70%;
+    top: -1500px;
   }
 }
