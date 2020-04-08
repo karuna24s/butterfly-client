@@ -1,12 +1,8 @@
 import socketIOClient from "socket.io-client";
-const url = "https://butterfly-server-api.herokuapp.com/";
+const url = "https://butterfly-server-api.herokuapp.com";
 const socket = socketIOClient(url);
 
 export function createBlueButterflies() {
-  // const emittedObject = {};
-  // socket.emit("butterfly", {
-  //   pathName: emittedObject,
-  // });
   const BlueButton = document.getElementById("Blue");
   const newImg = document.createElement("img");
   newImg.setAttribute("src", "static/BlueButterfly.png");

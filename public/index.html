@@ -33,33 +33,33 @@
     <div class="buttons">
     <!--use this as parent for flexbox-->
 
-    <button id="Blue" class="btn btn-default" onclick="createBlueButterflies()"> <!--</button>type="button" name = "Nurse Strong" class="mainButtons"  value="butterfly stickers"> -->
+    <button id="Blue" class="btn btn-default" onclick="clickEmit('Blue')">
       <img src ="static/BlueButterfly.png" class="buttonSize" />
       <p>Nurse Strong </p>
     </button>
 
 
-    <button id="Yellow" class="btn btn-default" onclick="createYellowButterflies()"> <!--</button>type="button" name = "Nurse Strong" class="mainButtons"  value="butterfly stickers"> -->
+    <button id="Yellow" class="btn btn-default" onclick="clickEmit('Yellow')">
       <img src ="static/YellowButterfly.png" class="buttonSize" />
       <p>You got this </p>
     </button>
 
 
-    <button id="Orange" class="btn btn-default" onclick="createOrangeButterflies()"> <!--</button>type="button" name = "Nurse Strong" class="mainButtons"  value="butterfly stickers"> -->
+    <button id="Orange" class="btn btn-default" onclick="clickEmit('Orange')">
       <img src ="static/OrangeButterfly.png" class="buttonSize"/>
       <p>Essential Worker </p>
     </button>
 
 
 
-    <button id="Pink" class="btn btn-default" onclick="createPinkButterflies()"> <!--</button>type="button" name = "Nurse Strong" class="mainButtons"  value="butterfly stickers"> -->
+    <button id="Pink" class="btn btn-default" onclick="clickEmit('Pink')">
       <img src ="static/PinkButterfly.png" class="buttonSize" />
       <p>Doctor Strong </p>
     </button>
 
 
 
-    <button id="Purple" class="btn btn-default" onclick="createPurpleButterflies()" id="farRightBttn"> <!--</button>type="button" name = "Nurse Strong" class="mainButtons"  value="butterfly stickers"> -->
+    <button id="Purple" class="btn btn-default" onclick="clickEmit('Purple')" id="farRightBttn">
       <img src ="static/PurpleButterfly.png" class="buttonSize" />
       <p>Thank You </p>
     </button>
@@ -78,10 +78,36 @@
   </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
     <script>
+
+      var socket = io("https://butterfly-server-api.herokuapp.com");
+
+      var funcObj = {
+        Purple: createPurpleButterflies,
+        Blue: createBlueButterflies,
+        Orange: createOrangeButterflies,
+        Yellow: createYellowButterflies,
+        Pink: createPinkButterflies
+      }
+
+      function clickEmit(callback) {
+        socket.emit("butterfly", callback)
+      };
+
+      socket.on("butterfly", function(data){
+        //console.log("Clients: ", funcObj[data])
+        var callback = funcObj[data];
+        callback()
+      })
+
       function createBlueButterflies() {
         const BlueButton = document.getElementById("Blue");
         const newImg = document.createElement("img");
