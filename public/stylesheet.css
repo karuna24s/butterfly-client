@@ -1,9 +1,10 @@
 html {
-  height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 #header {
@@ -18,10 +19,9 @@ body {
 #handwashing {
   width: 4em;
   height: 4em;
+  margin: 10px;
   display: inline-block;
-  /* position: relative; */
   bottom: 5em;
-  /* left: 65em; */
 }
 
 .buttonSize {
@@ -34,22 +34,20 @@ img {
   height: 4em;
 }
 
-/* .container-fluid.buttons */
 .buttons {
-  position: relative;
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  height: 60px;
+  padding-right: 2em;
   display: inline-flex;
-  justify-content: space-between;
-
-  /* top: 27em; */
-}
-
-.btn.btn-default {
-  /* margin-right: 100px; */
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
 }
 
 #farRightBttn {
   margin-right: 0;
-  /* margin-left: 50px; */
 }
 
 .footer {
@@ -58,24 +56,6 @@ img {
   width: 100%;
   height: 1em;
   background-color: black;
-}
-
-.containerFlex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-figure {
-  text-align: center;
-  padding-top: 15px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
 }
 
 /* Animation Styling CSS Framework */
@@ -87,12 +67,29 @@ figure {
 
 @keyframes Blue {
   0% {
-    top: 0px;
-    left: 40px;
+    top: 0%;
+    left: 20%;
+  }
+
+  10% {
+    left: 25%;
+  }
+
+  15% {
+    left: 50%;
+  }
+
+  25% {
+    left: 90%;
+  }
+
+  40% {
+    left: 150%;
   }
 
   100% {
-    top: -1500px;
+    top: -1500%;
+    left: 150%;
   }
 }
 
@@ -103,11 +100,29 @@ figure {
 
 @keyframes Yellow {
   0% {
-    top: 0px;
-    left: 200px;
+    top: 0%;
+    left: 50%;
   }
+
+  10% {
+    left: 65%;
+  }
+
+  15% {
+    left: 75%;
+  }
+
+  25% {
+    left: 60%;
+  }
+
+  40% {
+    left: 30%;
+  }
+
   100% {
-    top: -1500px;
+    top: -1500%;
+    left: 0%;
   }
 }
 
@@ -118,11 +133,29 @@ figure {
 
 @keyframes Orange {
   0% {
-    top: 0px;
-    left: 400px;
+    top: 0%;
+    left: 10%;
   }
+
+  10% {
+    left: 25%;
+  }
+
+  15% {
+    left: 35%;
+  }
+
+  25% {
+    left: 40%;
+  }
+
+  40% {
+    left: 25%;
+  }
+
   100% {
-    top: -1500px;
+    top: -1500%;
+    left: 0%;
   }
 }
 
@@ -133,12 +166,29 @@ figure {
 
 @keyframes Pink {
   0% {
-    top: 0px;
-    left: 650px;
+    top: 0%;
+    left: 10%;
+  }
+
+  10% {
+    left: 25%;
+  }
+
+  15% {
+    left: 50%;
+  }
+
+  25% {
+    left: 90%;
+  }
+
+  40% {
+    left: 75%;
   }
 
   100% {
-    top: -1500px;
+    top: -1500%;
+    left: 0%;
   }
 }
 
@@ -149,11 +199,28 @@ figure {
 
 @keyframes Purple {
   0% {
-    top: 0px;
-    left: 850px;
+    top: 0%;
+    left: 10%;
+  }
+
+  10% {
+    left: 5%;
+  }
+
+  15% {
+    left: -10%;
+  }
+
+  25% {
+    left: 0%;
+  }
+
+  40% {
+    left: -40%;
   }
 
   100% {
-    top: -1500px;
+    top: -1500%;
+    left: -30%;
   }
 }
