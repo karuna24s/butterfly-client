@@ -63,6 +63,11 @@ img {
 #BlueButterflies {
   animation: Blue 5s linear;
   position: absolute;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
 }
 
 @keyframes Blue {
@@ -96,6 +101,11 @@ img {
 #YellowButterflies {
   animation: Yellow 5s linear;
   position: absolute;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
 }
 
 @keyframes Yellow {
@@ -129,12 +139,17 @@ img {
 #OrangeButterflies {
   animation: Orange 5s linear;
   position: absolute;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
 }
 
 @keyframes Orange {
   0% {
     top: 0%;
-    left: 10%;
+    left: 20%;
   }
 
   10% {
@@ -162,12 +177,17 @@ img {
 #PinkButterflies {
   animation: Pink 5s linear;
   position: absolute;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
 }
 
 @keyframes Pink {
   0% {
     top: 0%;
-    left: 10%;
+    left: 20%;
   }
 
   10% {
@@ -195,6 +215,11 @@ img {
 #PurpleButterflies {
   animation: Purple 5s linear;
   position: absolute;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
 }
 
 @keyframes Purple {
