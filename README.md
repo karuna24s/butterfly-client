@@ -33,14 +33,14 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 ## Authors
 * **Katharine Francis** -
-Full Stack Software Developer, React/Redux, Node and Express
+Full Stack Software Engineer, React/Redux, Node and Express
 
 
-* **Genesis Valencia** -
+* **Genesis Valencia** - Jr. Software Engineer in Python, and Project Manager
 
-* **Karuna Sehgal** - Full Stack Web Developer, UI, Design
+* **Karuna Sehgal** - Full Stack Software Engineer, Ruby on Rails, JavaScript, React
 
-* **Laura Paulino** - Web Designer, HTML, CSS, Design, UI 
+* **Laura Paulino** - Web Developer and Designer, HTML, CSS, Design, UI 
 
 ## Acknowledgments
 
