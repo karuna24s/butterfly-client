@@ -7,22 +7,42 @@
   /* top: 27em; */
 }
 
-.butterflyButton {
+button {
   width: 4em;
   height: 4em;
 }
 
-input {
-  width: 4em;
-  height: 4em;
-}
-
-.padding {
+.morePadding {
   padding-top: 10px;
 }
 
 .btn.btn-default {
   /* margin-right: 100px; */
+}
+
+.BlueButterfly {
+  background-image: url('../../feature_butterflies/BlueButterfly.png');
+  background-size: cover;
+}
+
+.PinkButterfly {
+  background-image: url('../../feature_butterflies/PinkButterfly.png');
+  background-size: cover;
+}
+
+.OrangeButterfly {
+  background-image: url('../../feature_butterflies/OrangeButterfly.png');
+  background-size: cover;
+}
+
+.YellowButterfly {
+  background-image: url('../../feature_butterflies/YellowButterfly.png');
+  background-size: cover;
+}
+
+.PurpleButterfly {
+  background-image: url('../../feature_butterflies/PurpleButterfly.png');
+  background-size: cover;
 }
 
 /* Animation Styling CSS Framework */

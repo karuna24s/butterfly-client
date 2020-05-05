@@ -37,7 +37,7 @@ const ButterflyField = () => {
     socket.on("butterfly", (data) => {
       //data given to us from the server from the server
       console.log("Client Listening For Server: ", data);
-      setButterflies(butterflies => [...butterflies, data.pathName])
+      setButterflies(butterflies => [...butterflies, data])
     });
   }, []);
 
