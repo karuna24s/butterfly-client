@@ -1,15 +1,14 @@
-.buttons {
+.buttonsRow {
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   text-align: center;
-
-  /* top: 27em; */
 }
 
-.butterflyButton {
-  width: 4em;
-  height: 4em;
+img {
+  cursor: pointer;
+  height: 3em;
+  width: 3em;
 }
 
 input {
@@ -18,7 +17,7 @@ input {
 }
 
 .padding {
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .btn.btn-default {
@@ -27,7 +26,100 @@ input {
 
 /* Animation Styling CSS Framework */
 
-.Blue {
+img #BlueButterfly {
+  animation: Blue 5s linear;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+}
+
+@keyframes Blue {
+  0% {
+    bottom: 0;
+    left: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    left: 70%;
+  }
+}
+
+img #YellowButterfly {
+  animation: Yellow 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 35%;
+}
+
+@keyframes Yellow {
+  0% {
+    bottom: 0;
+    left: 0%;
+  }
+  100% {
+    bottom: 100%;
+    left: 10%;
+  }
+}
+
+img #OrangeButterfly {
+  animation: Orange 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+}
+
+@keyframes Orange {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+img #PinkButterfly {
+  animation: Pink 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 20%;
+}
+
+@keyframes Pink {
+  0% {
+    bottom: 0;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}
+
+img #PurpleButterfly {
+  animation: Purple 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 10%;
+}
+
+@keyframes Purple {
+  0% {
+    bottom: 0%;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}
+
+/* .Blue {
   animation: Blue 5s linear;
   position: absolute;
   margin-left: 5%;
@@ -116,4 +208,4 @@ input {
     bottom: 100%;
     right: 70%;
   }
-}
+} */
