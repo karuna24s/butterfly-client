@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 //import Form from "../Form/Form.component";
 import socketIOClient from "socket.io-client";
 import styles from "./ButterflyField.module.css";
-import BlueButterfly from "../../feature_butterflies/BlueButterfly.png";
-import OrangeButterfly from "../../feature_butterflies/OrangeButterfly.png";
-import PinkButterfly from "../../feature_butterflies/PinkButterfly.png";
-import PurpleButterfly from "../../feature_butterflies/PurpleButterfly.png";
-import YellowButterfly from "../../feature_butterflies/YellowButterfly.png";
+// import BlueButterfly from "../../feature_butterflies/BlueButterfly.png";
+// import OrangeButterfly from "../../feature_butterflies/OrangeButterfly.png";
+// import PinkButterfly from "../../feature_butterflies/PinkButterfly.png";
+// import PurpleButterfly from "../../feature_butterflies/PurpleButterfly.png";
+// import YellowButterfly from "../../feature_butterflies/YellowButterfly.png";
 
-const imgObj = {
-  BlueButterfly,
-  OrangeButterfly,
-  PinkButterfly,
-  PurpleButterfly,
-  YellowButterfly,
-};
+// const imgObj = {
+//   BlueButterfly,
+//   OrangeButterfly,
+//   PinkButterfly,
+//   PurpleButterfly,
+//   YellowButterfly,
+// };
 
 
 // import { imageData } from "../../data/imageData";
 
-const url = "https://butterfly-server-api.herokuapp.com";
-const socket = socketIOClient(url);
+// const url = "https://butterfly-server-api.herokuapp.com";
+// const socket = socketIOClient(url);
 
 const ButterflyField = () => {
   //const [pathname, setPathName] = useState("BlueButterfly");

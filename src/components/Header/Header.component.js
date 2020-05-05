@@ -7,7 +7,7 @@ const Header = ({ handwashing }) => {
       <h1 id={styles.header}>We are with you.</h1>
 
       <figure style={{ textAlign: "center", paddingTop: "15px" }}>
-        <img src={handwashing} id={styles.handwashing}></img>
+        <img src={handwashing} id={styles.handwashing} alt="Handwashing"></img>
         <figcaption id="subheader">We will overcome COVID 19</figcaption>
       </figure>
     </header>
