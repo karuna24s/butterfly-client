@@ -3,7 +3,7 @@
 *Emotional Support Butterflies* is a website where individuals who are social-distancing can virtually express their gratitude for medical professionals and essential employees working throughout the covid-19 pandemic in real-time. The message we hope to convey to essential employees during this time of social-distancing is "We Are With You." For more information, please read the project overview section.
 
 ## Webpage
-Visit the [Emotional Support Butterflies website](http://butterflies.herokuapp.com/) here.
+Visit the Emotional Support Butterflies website [here](http://butterflies.herokuapp.com/).
 
 ## Built With
 * [AdobeXD](https://www.adobe.com/products/xd.html) -
