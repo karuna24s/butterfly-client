@@ -16,6 +16,7 @@ const imgObj = {
   YellowButterfly,
 };
 
+
 // import { imageData } from "../../data/imageData";
 
 const url = "https://butterfly-server-api.herokuapp.com";
@@ -31,14 +32,23 @@ const ButterflyField = () => {
   //   setVisible(true);
   // }
 
-  socket.on("butterfly", (data) => {
-    //data given to us from the server from the server
-    //console.log("Client Listening For Server: ", data);
+  useEffect(() => {
+    const socket = socketIOClient("https://butterfly-server-api.herokuapp.com/");
+    socket.on("butterfly", (data) => {
+      //data given to us from the server from the server
+      console.log("Client Listening For Server: ", data);
+      setButterflies(butterflies => [...butterflies, data.pathName])
+    });
+  }, []);
 
-    //setPathName(data.pathName);
-    setButterflies([...butterflies, data.pathName]);
-    //hideMe();
-  });
+  // socket.on("butterfly", (data) => {
+  //   //data given to us from the server from the server
+  //   //console.log("Client Listening For Server: ", data);
+  //
+  //   //setPathName(data.pathName);
+  //   setButterflies([...butterflies, data.pathName]);
+  //   //hideMe();
+  // });
   // let style = {};
   // if (!visible) style.display = "none";
   //butterflies[butterflies.length - 1] i.e. BlueButterfly
@@ -59,9 +69,18 @@ const ButterflyField = () => {
 
   return (
     <div className={styles.sky}>
-      {butterflies.map((butterfly) => (
-        <div>{butterfly}</div>
-      ))}
+
+
+      {(butterflies.length > 0)
+        ?
+        butterflies.map((butterfly, idx) => (
+          <div key={idx}>{butterfly}</div>
+        ))
+         :
+         ""
+       }
+
+
     </div>
   );
 };
