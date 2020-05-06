@@ -5,6 +5,7 @@
   position: sticky;
   font-size: 4em;
   font-weight: bold;
+  z-index: 50;
 }
 
 #handwashing {

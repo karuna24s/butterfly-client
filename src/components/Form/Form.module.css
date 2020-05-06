@@ -3,6 +3,9 @@
   display: inline-flex;
   justify-content: space-between;
   text-align: center;
+  z-index: 100;
+  width: 90%;
+  background-color: white;
 
   /* top: 27em; */
 }
@@ -47,7 +50,20 @@ button {
 
 /* Animation Styling CSS Framework */
 
+.animated {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../feature_butterflies/BlueButterfly.png');
+  animation: Blue 5s linear;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 0;
+}
+
 .Blue {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../feature_butterflies/BlueButterfly.png');
   animation: Blue 5s linear;
   position: absolute;
   margin-left: 5%;

@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
-//import axios from "axios";
 import socketIOClient from "socket.io-client";
-//import { Button } from "reactstrap";
 import styles from "./Form.module.css";
 
 import { supportTexts } from "../../data/supportTexts";
-//import { imageData } from "../../data/imageData";
 
-const Form = () => {
+const Form = ({ butterflyAnimation }) => {
   const socket = socketIOClient("https://butterfly-server-api.herokuapp.com/");
   const [newButterfly, setNewButterfly] = useState();
 
