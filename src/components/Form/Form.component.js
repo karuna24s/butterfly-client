@@ -3,6 +3,7 @@ import socketIOClient from "socket.io-client";
 import { Row, Col } from "reactstrap";
 import styles from "./Form.module.css";
 
+import { fiveSecondRule } from "../../data/utils";
 import { supportTexts } from "../../data/supportTexts";
 import { imageData } from "../../data/imageData";
 const url = "http://localhost:4001";
@@ -26,17 +27,21 @@ const Form = ({ butterflyAnimation }) => {
       const butterflyButton = document.getElementById(`${butterflyAnimation}`);
       //console.log("Clicked butterfly: ", butterflyButton);
       const newImg = document.createElement("img");
+
       newImg.setAttribute("src", imageData[`${butterflyAnimation}`]);
-      newImg.setAttribute("id", butterflyAnimation);
+      newImg.classList.add(butterflyAnimation);
+      //newImg.setAttribute("id", butterflyAnimation);
       //console.log("New Image: ", newImg);
       butterflyButton.appendChild(newImg);
+
+      fiveSecondRule(butterflyButton, newImg);
     }
   });
   return (
     <Row className={styles.buttonsRow}>
       {supportTexts.map((text) => (
-        <Col id={text.pathName} className={styles.padding}>
-          <div key={text.id}>
+        <Col key={text.id} id={text.pathName} className={styles.padding}>
+          <div>
             <img
               src={text.img}
               alt={text.pathName}

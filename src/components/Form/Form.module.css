@@ -26,7 +26,7 @@ input {
 
 /* Animation Styling CSS Framework */
 
-img #BlueButterfly {
+img .BlueButterfly {
   animation: Blue 5s linear;
   position: absolute;
   margin-left: 5%;
@@ -47,7 +47,7 @@ img #BlueButterfly {
   }
 }
 
-img #YellowButterfly {
+img .YellowButterfly {
   animation: Yellow 5s linear;
   position: absolute;
   bottom: 0;
@@ -65,7 +65,7 @@ img #YellowButterfly {
   }
 }
 
-img #OrangeButterfly {
+img .OrangeButterfly {
   animation: Orange 5s linear;
   position: absolute;
   bottom: 0;
@@ -81,7 +81,7 @@ img #OrangeButterfly {
   }
 }
 
-img #PinkButterfly {
+img .PinkButterfly {
   animation: Pink 5s linear;
   position: absolute;
   bottom: 0;
@@ -100,7 +100,7 @@ img #PinkButterfly {
   }
 }
 
-img #PurpleButterfly {
+img .PurpleButterfly {
   animation: Purple 5s linear;
   position: absolute;
   bottom: 0;
