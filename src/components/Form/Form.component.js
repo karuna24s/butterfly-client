@@ -25,7 +25,7 @@ const Form = ({ butterflyAnimation }) => {
     if (butterflyAnimation) {
       console.log("Butterfly Animation: ", butterflyAnimation);
       const butterflyButton = document.getElementById(`${butterflyAnimation}`);
-      console.log("Clicked butterfly: ", butterflyButton);
+      //console.log("Clicked butterfly: ", butterflyButton);
       // const newImg = React.createElement("img", {
       //   src: imageData[`${butterflyAnimation}`],
       //   class: `${butterflyAnimation}`,
