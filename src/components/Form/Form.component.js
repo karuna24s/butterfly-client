@@ -25,13 +25,18 @@ const Form = ({ butterflyAnimation }) => {
     if (butterflyAnimation) {
       console.log("Butterfly Animation: ", butterflyAnimation);
       const butterflyButton = document.getElementById(`${butterflyAnimation}`);
-      //console.log("Clicked butterfly: ", butterflyButton);
+      console.log("Clicked butterfly: ", butterflyButton);
+      // const newImg = React.createElement("img", {
+      //   src: imageData[`${butterflyAnimation}`],
+      //   class: `${butterflyAnimation}`,
+      // });
       const newImg = document.createElement("img");
 
       newImg.setAttribute("src", imageData[`${butterflyAnimation}`]);
       newImg.classList.add(butterflyAnimation);
-      //newImg.setAttribute("id", butterflyAnimation);
-      //console.log("New Image: ", newImg);
+      //newImg.setAttribute("class", butterflyAnimation);
+      console.log("New Image: ", newImg);
+
       butterflyButton.appendChild(newImg);
 
       fiveSecondRule(butterflyButton, newImg);
@@ -40,12 +45,13 @@ const Form = ({ butterflyAnimation }) => {
   return (
     <Row className={styles.buttonsRow}>
       {supportTexts.map((text) => (
-        <Col key={text.id} id={text.pathName} className={styles.padding}>
+        <Col key={text.id} className={styles.padding}>
           <div>
             <img
               src={text.img}
               alt={text.pathName}
               onClick={handleSubmit(text.pathName)}
+              id={text.pathName}
             />
           </div>
           <p>{text.msg}</p>
