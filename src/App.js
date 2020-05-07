@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header/Header.component.js";
+import "./App.css";
 //import ButterflyField from "./components/ButterflyField/ButterflyField.component";
 import Form from "./components/Form/Form.component";
 import socketIOClient from "socket.io-client";
@@ -20,10 +21,11 @@ const App = () => {
   });
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="App">
       <Header handwashing={handwashing} />
-      {/* <ButterflyField  /> */}
-      <Form butterflyAnimation={pathName} />
+      <footer>
+        <Form butterflyAnimation={pathName} />
+      </footer>
     </div>
   );
 };

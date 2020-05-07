@@ -1,4 +1,7 @@
 .App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -35,4 +38,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+footer {
+  margin-top: auto;
 }
