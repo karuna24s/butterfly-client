@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import socketIOClient from "socket.io-client";
 import styles from "./Form.module.css";
 
@@ -8,7 +8,7 @@ const Form = ({ butterflyAnimation }) => {
   const socket = socketIOClient("https://butterfly-server-api.herokuapp.com/");
   const [newButterfly, setNewButterfly] = useState();
 
-  const handleSubmit =  event => {
+  const handleSubmit = event => {
       event.preventDefault();
 
       const emitObj = {
@@ -16,14 +16,15 @@ const Form = ({ butterflyAnimation }) => {
       };
 
       setNewButterfly(emitObj)
-    }
+  }
 
   useEffect(() => {
     if (newButterfly) {
+      console.log("Emit butterfly " + newButterfly.color)
       //On click, emit data to server
       socket.emit("butterfly", newButterfly.color);
     }
-  }, ([newButterfly]));
+  }, ([newButterfly, socket]));
 
   return (
     <form className={styles.buttons}>

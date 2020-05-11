@@ -1,95 +1,105 @@
+
+.Butterfly {
+  animation: rtLeft 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes rtLeft {
+  to { transform: translatex(50%);}
+}
+
+
 .Blue {
-  animation: BlueKeyframes 5s linear;
+  animation: BlueKeyframes 10s linear;
   position: absolute;
   margin-left: 5%;
-  bottom: 0;
+  bottom: 120%;
   z-index: 1;
 }
 
 @keyframes BlueKeyframes {
   0% {
-    bottom: 0;
-    left: 10%;
+    bottom: 5%;
+    left: 0%;
   }
 
-  100% {
+  50% {
     bottom: 100%;
-    left: 70%;
+    left: 16%;
   }
 }
 
 .Yellow {
-  animation: Yellow 5s linear;
+  animation: Yellow 10s linear;
   position: absolute;
-  bottom: 0;
+  bottom: 115%;
   margin-left: 35%;
   z-index: 1;
 }
 
 @keyframes Yellow {
   0% {
-    bottom: 0;
-    left: 0%;
+    bottom: 5%;
+    left: -5%;
   }
-  100% {
+  50% {
     bottom: 100%;
-    left: 10%;
+    left: 15%;
   }
 }
 
 .Orange {
-  animation: Orange 5s linear;
+  animation: Orange 10s linear;
   position: absolute;
-  bottom: 0;
+  bottom: 115%;
   margin-left: 50%;
   z-index: 1;
 }
 
 @keyframes Orange {
   0% {
-    bottom: 0%;
+    bottom: 5%;
   }
-  100% {
+  50% {
     bottom: 100%;
   }
 }
 
 .Pink {
-  animation: Pink 5s linear;
+  animation: Pink 10s linear;
   position: absolute;
-  bottom: 0;
+  bottom: 115%;
   margin-right: 20%;
   z-index: 1;
 }
 
 @keyframes Pink {
   0% {
-    bottom: 0;
-    right: 10%;
+    bottom: 5%;
+    right: 0%;
   }
 
-  100% {
+  50% {
     bottom: 100%;
-    right: 70%;
+    right: 20%;
   }
 }
 
 .Purple {
-  animation: Purple 5s linear;
+  animation: Purple 10s linear;
   position: absolute;
-  bottom: 0;
+  bottom: 115%;
   margin-right: 10%;
   z-index: 1;
 }
 
 @keyframes Purple {
   0% {
-    bottom: 0%;
-    right: 10%;
+    bottom: 5%;
+    right: 0%;
   }
 
-  100% {
+  50% {
     bottom: 100%;
-    right: 70%;
+    right: 10%;
   }
 }

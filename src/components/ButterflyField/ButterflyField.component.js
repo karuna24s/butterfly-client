@@ -31,9 +31,9 @@ const ButterflyField = () => {
     <div className={styles.sky}>
 
       {(butterflies.length > 0)
-        ? butterflies.map((butterfly) => (
+        ? butterflies.map((butterfly) =>
           <Butterfly key={butterfly.id} timestamp={butterfly.id} color={butterfly.color} />
-        ))
+        )
 
          : ""
        }

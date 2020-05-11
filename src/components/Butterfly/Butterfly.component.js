@@ -24,7 +24,7 @@ const Butterfly = ({color, timestamp}) => {
 
   return (
     <div className={styles[color]}>
-      <img  src={images[imgPath]}/>
+      <img className={styles["Butterfly"]} src={images[imgPath]}/>
     </div>
   )
 }
