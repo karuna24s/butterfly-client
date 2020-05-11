@@ -12,14 +12,19 @@
   animation: BlueKeyframes 10s linear;
   position: absolute;
   margin-left: 5%;
-  bottom: 120%;
+  bottom: 115%;
   z-index: 1;
 }
 
 @keyframes BlueKeyframes {
   0% {
     bottom: 5%;
-    left: 0%;
+    left: 5%;
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
   }
 
   50% {
@@ -40,7 +45,13 @@
   0% {
     bottom: 5%;
     left: -5%;
-  }
+    opacity: 0;
+    }
+
+    5% {
+      opacity: 1;
+    }
+
   50% {
     bottom: 100%;
     left: 15%;
@@ -58,7 +69,13 @@
 @keyframes Orange {
   0% {
     bottom: 5%;
+    opacity: 0;
   }
+
+  5% {
+    opacity: 1;
+  }
+
   50% {
     bottom: 100%;
   }
@@ -75,7 +92,12 @@
 @keyframes Pink {
   0% {
     bottom: 5%;
-    right: 0%;
+    right: 5%;
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
   }
 
   50% {
@@ -96,7 +118,12 @@
   0% {
     bottom: 5%;
     right: 0%;
-  }
+    opacity: 0;
+    }
+
+    5% {
+      opacity: 1;
+    }
 
   50% {
     bottom: 100%;

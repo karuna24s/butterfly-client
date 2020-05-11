@@ -20,7 +20,6 @@ const Form = ({ butterflyAnimation }) => {
 
   useEffect(() => {
     if (newButterfly) {
-      console.log("Emit butterfly " + newButterfly.color)
       //On click, emit data to server
       socket.emit("butterfly", newButterfly.color);
     }

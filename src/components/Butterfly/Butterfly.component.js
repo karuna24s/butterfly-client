@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from './Butterfly.module.css'
 
 import BlueButterfly from "../../feature_butterflies/BlueButterfly.png";
@@ -17,10 +17,6 @@ const images = {BlueButterfly,
 const Butterfly = ({color, timestamp}) => {
 
   const imgPath = color + 'Butterfly'
-
-  useEffect(() => {
-    console.log(imgPath)
-  }, [])
 
   return (
     <div className={styles[color]}>
