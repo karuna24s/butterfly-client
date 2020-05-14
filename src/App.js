@@ -1,22 +1,29 @@
-import React, { useState } from "react";
-import socketIOClient from "socket.io-client";
-import Form from "./components/Form.component";
-import ButterflyField from "./components/ButterflyField.component";
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header/Header.component.js";
+import ButterflyField from "./components/ButterflyField/ButterflyField.component";
+import Form from "./components/Form/Form.component";
+import Footer from './components/Footer/Footer.component';
+import InfoModal from './components/Modal/Modal.component';
+
+import handwashing from "./feature_butterflies/handwashing.svg";
 
 const App = () => {
-  const [pathName, setPathName] = useState("");
 
-  const socket = socketIOClient("https://butterfly-server-api.herokuapp.com/");
-  socket.on("butterfly", data => {
-    //data given to us from the server from the server
-    console.log("Client Listening For Server: ", data);
-    setPathName(data.pathName);
-  });
+  const [isModalOpen, setModalState] = useState([true]);
+
+  const toggleModal = () => {
+    setModalState(!isModalOpen)
+  }
 
   return (
     <div style={{ textAlign: "center" }}>
-      <ButterflyField pathName={pathName} />
+
+      {isModalOpen ? <InfoModal toggleModal={toggleModal}/> : ""}
+
+      <Header handwashing={handwashing} />
+      <ButterflyField />
       <Form />
+      <Footer toggleModal={toggleModal} isModalOpen={isModalOpen} />
     </div>
   );
 };
