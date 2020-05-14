@@ -1,4 +1,3 @@
-// very quick test
 import React from "react";
 
 const ButterflyField = ({ pathName }) => {
