@@ -1,6 +1,5 @@
 #header {
-  margin: 10px;
-  margin-top: 10px;
+  margin: 1rem;
   padding: 0;
   position: sticky;
   font-size: 4em;
@@ -12,6 +11,7 @@
   width: 4em;
   height: 4em;
   display: inline-block;
+  margin: 0;
   /* position: relative; */
   bottom: 5em;
   /* left: 65em; */
@@ -21,9 +21,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 20vh;
 }
 
 figure {
   text-align: center;
   padding-top: 15px;
+  margin: 1rem;
+}
+
+/* figure img {
+  min-height: 20em;
+} */
+
+@media screen and (max-width: 760px) {
+  #header {
+    font-size: 2em;
+  }
+  #handwashing {
+    height: 3em;
+    width: 3em;
+  }
+  #subheader {
+    display: none;
+  }
+  figure {
+    margin: 0.5rem;
+  }
 }

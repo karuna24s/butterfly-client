@@ -6,6 +6,7 @@
   z-index: 100;
   width: 90%;
   background-color: white;
+  height: 18vh;
   /* top: 27em; */
 }
 
@@ -23,35 +24,35 @@ button {
 }
 
 .BlueButterfly {
-  background-image: url('../../feature_butterflies/BlueButterfly.png');
+  background-image: url("../../feature_butterflies/BlueButterfly.png");
   background-size: cover;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .PinkButterfly {
-  background-image: url('../../feature_butterflies/PinkButterfly.png');
+  background-image: url("../../feature_butterflies/PinkButterfly.png");
   background-size: cover;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .OrangeButterfly {
-  background-image: url('../../feature_butterflies/OrangeButterfly.png');
+  background-image: url("../../feature_butterflies/OrangeButterfly.png");
   background-size: cover;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .YellowButterfly {
-  background-image: url('../../feature_butterflies/YellowButterfly.png');
+  background-image: url("../../feature_butterflies/YellowButterfly.png");
   background-size: cover;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .PurpleButterfly {
-  background-image: url('../../feature_butterflies/PurpleButterfly.png');
+  background-image: url("../../feature_butterflies/PurpleButterfly.png");
   background-size: cover;
   border: 1px solid white;
   border-radius: 50%;

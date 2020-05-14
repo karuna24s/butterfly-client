@@ -1,16 +1,27 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { Col, Row } from "reactstrap";
 
 const Header = ({ handwashing }) => {
   return (
-    <header className={styles.containerFlex}>
-      <h1 id={styles.header}>We are with you.</h1>
+    <Row className={styles.containerFlex}>
+      <Col>
+        <p id={styles.header}>We are with you.</p>
+      </Col>
 
-      <figure style={{ textAlign: "center", paddingTop: "15px" }}>
-        <img src={handwashing} id={styles.handwashing} alt="Handwashing"></img>
-        <figcaption id="subheader">We will overcome COVID 19</figcaption>
-      </figure>
-    </header>
+      <Col>
+        <figure style={{ textAlign: "center", paddingTop: "15px" }}>
+          <img
+            src={handwashing}
+            id={styles.handwashing}
+            alt="Handwashing"
+          ></img>
+          <figcaption id={styles.subheader}>
+            We will overcome COVID 19
+          </figcaption>
+        </figure>
+      </Col>
+    </Row>
   );
 };
 
