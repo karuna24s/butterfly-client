@@ -1,6 +1,6 @@
 .sky {
-  height: 62vh;
-  background-color: lightblue;
+  /* min-height: 60vh;
+  background-color: lightblue; */
   z-index: 0;
 }
 
@@ -13,10 +13,61 @@ img {
   position: relative;
   display: inline-flex;
   justify-content: space-between;
-
-  /* top: 27em; */
 }
 
-.btn.btn-default {
-  /* margin-right: 100px; */
+@media screen and (max-width: 1110px) {
+}
+
+@media screen and (max-width: 875px) {
+}
+
+@media screen and (max-width: 825px) {
+}
+
+@media screen and (max-width: 785px) {
+}
+
+@media screen and (max-width: 640px) {
+  .sky {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .sky {
+    min-height: 45vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+}
+
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-height: 360px) {
+  .sky {
+    min-height: 30vh;
+  }
+}
+
+@media screen and (max-height: 411px) {
+  .sky {
+    min-height: 45vh;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .sky {
+    min-height: 35vh;
+  }
+}
+@media screen and (max-height: 640px) {
+  .sky {
+    min-height: 50vh;
+    max-height: 40vh;
+  }
+}
+
+@media screen and (max-height: 1366px) {
 }

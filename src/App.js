@@ -4,15 +4,15 @@ import ButterflyField from "./components/ButterflyField/ButterflyField.component
 import Form from "./components/Form/Form.component";
 
 import handwashing from "./feature_butterflies/handwashing.svg";
+import { Container } from "reactstrap";
 
 const App = () => {
-
   return (
-    <div style={{ textAlign: "center" }}>
+    <Container style={{ textAlign: "center" }}>
       <Header handwashing={handwashing} />
       <ButterflyField />
       <Form />
-    </div>
+    </Container>
   );
 };
 

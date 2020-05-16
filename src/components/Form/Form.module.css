@@ -6,7 +6,7 @@
   z-index: 100;
   width: 90%;
   background-color: white;
-  height: 18vh;
+  min-height: 20vh;
   /* top: 27em; */
 }
 
