@@ -77,18 +77,31 @@
 
 @media screen and (max-height: 411px) {
   .infoModalContent {
-    margin: 5% auto;
+    margin: 4% auto;
+    width: 90%;
   }
 }
 
 @media screen and (min-height: 640px) {
   .infoModalContent {
-    margin: 25% auto;
+    margin: 20% auto;
   }
 }
 
 @media screen and (min-height: 800px) {
   .infoModalContent {
     margin: 25% auto;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .infoModalContent {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .infoModalContent {
+    margin: 10% auto;
   }
 }
