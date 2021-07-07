@@ -1,0 +1,95 @@
+.Blue {
+  animation: BlueKeyframes 5s linear;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 0;
+  z-index: 1;
+}
+
+@keyframes BlueKeyframes {
+  0% {
+    bottom: 0;
+    left: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    left: 70%;
+  }
+}
+
+.Yellow {
+  animation: Yellow 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 35%;
+  z-index: 1;
+}
+
+@keyframes Yellow {
+  0% {
+    bottom: 0;
+    left: 0%;
+  }
+  100% {
+    bottom: 100%;
+    left: 10%;
+  }
+}
+
+.Orange {
+  animation: Orange 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+  z-index: 1;
+}
+
+@keyframes Orange {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+.Pink {
+  animation: Pink 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 20%;
+  z-index: 1;
+}
+
+@keyframes Pink {
+  0% {
+    bottom: 0;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}
+
+.Purple {
+  animation: Purple 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 10%;
+  z-index: 1;
+}
+
+@keyframes Purple {
+  0% {
+    bottom: 0%;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}

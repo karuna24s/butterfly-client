@@ -1,0 +1,61 @@
+.buttons {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 100;
+  width: 90%;
+  background-color: white;
+
+  /* top: 27em; */
+}
+
+button {
+  width: 4em;
+  height: 4em;
+}
+
+.morePadding {
+  padding-top: 10px;
+}
+
+.btn.btn-default {
+  /* margin-right: 100px; */
+}
+
+.BlueButterfly {
+  background-image: url('../../feature_butterflies/BlueButterfly.png');
+  background-size: cover;
+}
+
+.PinkButterfly {
+  background-image: url('../../feature_butterflies/PinkButterfly.png');
+  background-size: cover;
+}
+
+.OrangeButterfly {
+  background-image: url('../../feature_butterflies/OrangeButterfly.png');
+  background-size: cover;
+}
+
+.YellowButterfly {
+  background-image: url('../../feature_butterflies/YellowButterfly.png');
+  background-size: cover;
+}
+
+.PurpleButterfly {
+  background-image: url('../../feature_butterflies/PurpleButterfly.png');
+  background-size: cover;
+}
+
+/* Animation Styling CSS Framework */
+
+.animated {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../feature_butterflies/BlueButterfly.png');
+  animation: Blue 5s linear;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 0;
+}
