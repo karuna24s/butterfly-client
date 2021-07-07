@@ -1,4 +1,11 @@
-html {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* html {
   position: relative;
   min-height: 100%;
 }
@@ -60,7 +67,7 @@ img {
 
 /* Animation Styling CSS Framework */
 
-#BlueButterflies {
+/*#BlueButterflies {
   animation: Blue 5s linear;
   position: absolute;
   transform: scale(0.65);
@@ -248,4 +255,4 @@ img {
     top: -1500%;
     left: -30%;
   }
-}
+} */
